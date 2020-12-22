@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020년을 보내며</title>
+
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtlQC2rMUXaFVsNBiZMjoG_RGz3BjRt7ecLw&usqp=CAU">
+
+    <meta property="og:image" content="https://www.christmastreeassociation.org/wp-content/uploads/2016/06/multiple-christmas-trees-in-one-household-800x400.jpg">
+    <meta property="og:title" content="주미의 카드">
+    <meta property="og:description" content="2020을 추억하며 주미가 만든 카드">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Gaegu', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+            width: 300px;
+            height: 200px;
+
+            background-image: url('https://lh3.googleusercontent.com/proxy/62zO5nXwGZ1XjL0SsV_Z1Cv241b3v0nhtkbUK4o32uNRA_Z99sWWhXag1wt99h5CHXDmE2gJ3X-EJuNWwvZ65n54laf7JO6guh87h3ratdUMna6ingN2g-5nkZvRiC-2ZRA42RF1cB35dxe_zcaLefvSDPWEUJgXBz2N58HA8yZ4TBL93Q');
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            width: 200px;
+            height: 200px;
+
+            background-color: white;
+            background-image: url('https://ifh.cc/g/L0x68y.jpg');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin: 30px 0px 30px 0px;
+        }
+
+        .messagebox {
+            width: 400px;
+            color: brown;
+            font-size: 20px;
+            line-height: 30px;
+            padding: 20px;
+
+            margin: auto;
+            background-color: ivory;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+        }    
+    </style>
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_rtan() {
+            alert("어떻게 찾았지?ㅋㅋ 저에게 답장을 보내주세요!");
+            window.location.href='https://www.naver.com/'
+        }
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">카드를 열어보세요 !</h2>
+    </div>
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>한 해 동안 수고 많으셨어요</h1>
+        <div class="messagebox">
+            사랑하는 가족들에게 <br />
+            올해 이런저런 일이 많았는데 <br />
+            우리 가족 덕분에 하나도 힘들지 않았어요 <br />
+            이번에 다 같이 못 봐서 아쉽지만 <br />
+            남은 연말 잘 마무리하시고 <br />
+            내년은 더 풍족한 한 해가 되기를 <br />
+            Merry Christmas ! <br/>
+            <p class="from">주미 올림</p>
+        </div>
+    </div>
+</body>
+
+</html>
